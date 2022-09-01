@@ -3,3 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --c-white: #FFFFFE;
+    --c-black: #0F0E17;
+    --c-title: #E53170;
+    --c-email: #4DCCF2;
+}
+
+/* #region utility */
+/* font-family: 'Quicksand', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+/* #endregion utility */
+
+
+body {
+    width: 80%;
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    color: var(--c-title);
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+header>p {
+    font-size: 0.65rem;
+}
