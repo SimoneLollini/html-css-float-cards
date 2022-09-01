@@ -11,13 +11,23 @@
     --c-email: #4DCCF2;
 }
 
-/* #region utility */
+
 /* font-family: 'Quicksand', sans-serif; */
 /* font-family: 'Roboto', sans-serif; */
-/* #endregion utility */
+
+/* #region Utility */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* #endregion Utility */
 
 
-body {
+
+header,
+main {
     width: 80%;
     margin: auto;
     font-family: 'Quicksand', sans-serif;
@@ -30,8 +40,45 @@ h1 {
 
 header {
     text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 header>p {
     font-size: 0.65rem;
+    margin-top: 1rem;
+}
+
+.col-4 {
+    background-color: var(--c-black);
+    width: calc(100% / 3 - 1.8rem);
+    float: left;
+    margin-bottom: 1.85rem;
+    margin-left: 0.9rem;
+}
+
+img {
+    max-width: 100%;
+    float: left;
+    width: 4rem;
+    margin-right: 0.2rem;
+}
+
+.name,
+.profession {
+    color: var(--c-white);
+}
+
+.name {
+    font-size: 0.7rem;
+}
+
+.profession {
+    font-size: 0.55rem;
+    margin-top: 0.7rem;
+}
+
+.email {
+    color: var(--c-email);
+    font-size: 0.55rem;
 }
